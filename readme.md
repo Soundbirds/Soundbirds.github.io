@@ -1,1 +1,1 @@
-Photos and videos
+Photos and videos of birds from the West Coast of the contiguous U.S.
