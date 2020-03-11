@@ -219,6 +219,25 @@ const clear = (() => {
 <center><h3></h3></center>
 
 <center><img SRC="RAIN_LINE.gif" ></center>
+
+<script>
+const clear = (() => {
+    const defined = v => v !== null && v !== undefined;
+    const timeout = setInterval(() => {
+        const ad = [...document.querySelectorAll('.ad-showing')][0];
+        if (defined(ad)) {
+            const video = document.querySelector('video');
+            if (defined(video)) {
+                video.currentTime = video.duration;
+            }
+        }
+    }, 500);
+    return function() {
+        clearTimeout(timeout);
+    }
+})();
+// clear();
+</script>
    
 <center><h3></h3></center>
 
